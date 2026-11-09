@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Layers 3D Printing</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #c8ccd0;
+    --text: #2b2f33;
+    --teal: #0f8b8d;
+    --teal-deep: #0b6e70;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Trebuchet MS", "Segoe UI", Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+  }
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 24px;
+    text-align: center;
+  }
+  h1 {
+    margin: 0 0 40px;
+    font-size: clamp(2.2rem, 7vw, 3.6rem);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--teal);
+  }
+  nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  nav a {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 18px 8px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    color: var(--text);
+    font-size: clamp(0.78rem, 2.4vw, 1.1rem);
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+  }
+  nav a:hover { background: var(--teal); color: #fff; }
+  nav a:focus-visible { outline: 3px solid var(--teal-deep); outline-offset: 3px; }
+</style>
+</head>
+<body>
+  <main>
+    <h1>Layers 3D Printing</h1>
+    <nav aria-label="Main">
+      <a href="premade.html">Pre-made pieces</a>
+      <a href="custom.html">Personalized orders</a>
+      <a href="contact.html">Contact us</a>
+      <a href="check-order.html">Check your order</a>
+    </nav>
+  </main>
+</body>
+</html>
